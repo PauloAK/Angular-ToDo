@@ -1,4 +1,8 @@
+import { Task } from './interfaces/task';
 import { Component } from '@angular/core';
+
+import { faSquare } from '@fortawesome/free-regular-svg-icons';
+import { faCheckSquare } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +10,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Angular-ToDo';
+  public tasks : Task[] = [];
+  public currentTaskText : string = '';
+
+  faSquare = faSquare;
+  faCheckSquare = faCheckSquare;
+
+  addTask(){
+    let task = {
+      text: this.currentTaskText,
+      completed: false,
+      created_at: new Date
+    };
+    
+    this.tasks.push(task);
+    this.currentTaskText = '';
+  }
+
+  removeTask(task){
+    this.tasks = this.tasks.filter(_task => _task != task);
+  }
+
 }

@@ -1,1 +1,9 @@
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/utilities';
+
 /* You can add global styles to this file, and also import other style files */
+html, body {
+    background-color: #f3f3f7;
+    height: 100%;
+}
