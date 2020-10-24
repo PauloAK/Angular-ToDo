@@ -1,27 +1,36 @@
-# AngularToDo
+# Angular - ToDo App (Learning Purpose)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+![](/img/TodoApp.png)
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. Clone the repository
+```
+git clone https://github.com/PauloAK/Angular-ToDo.git
+```
 
-## Code scaffolding
+2. Install dependencies
+```
+npm install
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+3. Run the server
+```
+ng serve
+```
 
-## Build
+11. Open you navigator and go to the angular project address, by default is: 127.0.0.1:4200
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Technologies
+### Front-End
+* [TailWind CSS](https://tailwindcss.com/)
+* [Angular](https://angular.io/)
+* [TypeScript](https://www.typescriptlang.org/)
+* [Font Awesome 5](https://fontawesome.com/)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Features
+* Add tasks
+* Remove Tasks
+* Edit Tasks
+* Mark as completed
