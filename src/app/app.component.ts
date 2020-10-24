@@ -27,6 +27,10 @@ export class AppComponent {
     this.currentTaskText = '';
   }
 
+  editTask(task){
+    task.editMode = !task.editMode;
+  }
+
   removeTask(task){
     this.tasks = this.tasks.filter(_task => _task != task);
   }
